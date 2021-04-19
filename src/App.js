@@ -12,7 +12,9 @@ import Details from './ResumeComponent/Details/Details'
 import Media from './ResumeComponent/Media/Media';
 import Education from './ResumeComponent/Career/Education';
 import Skills from './ResumeComponent/Skills/Skills';
+import Languages from './ResumeComponent/Skills/Languages';
 import Preview from './ResumeComponent/Preview/Preview';
+
 
 
 class App extends Component {
@@ -39,7 +41,9 @@ class App extends Component {
                     'Twitter': '',
                     'Youtube': '',
                     'Dribbble': ''
-                }
+                },
+                skill: ["Add Skill"],
+                language: ["Add Language"],
             }
             localStorage.setItem('resume-data',JSON.stringify(this.state))
         } 
@@ -72,7 +76,12 @@ class App extends Component {
                             <Media social={this.state} updateState={this.updateState} />
                         </Route>
                         <Route exact path={containLink+"/education"} component={Education}/>
-                        <Route exact path={containLink+"/skills"} component={Skills}/>
+                        <Route exact path={containLink+"/skills"} >
+                            <Skills skill={this.state} updateState={this.updateState} />
+                        </Route>
+                        <Route exact path={containLink+"/language"}>
+                            <Languages language={this.state} updateState={this.updateState}  />
+                        </Route>
                         <Route exact path={containLink+"/preview"}>
                             <Preview data={this.state} updateState={this.updateState}  />
                         </Route>
@@ -80,6 +89,11 @@ class App extends Component {
                     </Switch>
                     <Footer />
                 </Router>
+
+                {/* Remove it later */}
+                <div className="container my-5 py-5">
+                    
+                </div>
             </>
         )
     }

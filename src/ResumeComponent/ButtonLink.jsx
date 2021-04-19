@@ -26,7 +26,9 @@ export default class ButtonLink extends Component {
                     'Twitter': '',
                     'Youtube': '',
                     'Dribbble': ''
-                }
+                },
+                skill: ["Add Skill"],
+                language: ["Add Language"],
             }
             //console.log(init)
             //console.log(this.props)
@@ -46,7 +48,7 @@ export default class ButtonLink extends Component {
                 <Link className="btn btn-info my-2 mx-1 btn-sm" to={containLink+"/details"}>Work</Link>
                 <Link className="btn btn-info my-2 mx-1 btn-sm" to={containLink+"/details"}>Awards</Link>
                 <Link className="btn btn-info my-2 mx-1 btn-sm" to={containLink+"/skills"}>Skills</Link>
-                <Link className="btn btn-info my-2 mx-1 btn-sm" to={containLink+"/details"}>Languages</Link>
+                <Link className="btn btn-info my-2 mx-1 btn-sm" to={containLink+"/language"}>Languages</Link>
                 <Link className="btn btn-info my-2 mx-1 btn-sm" to={containLink+"/preview"}>Preview</Link>
                 <button className="btn btn-danger my-2 mx-1 btn-sm" onClick={this.clearAll}>Delete</button>
             </>
