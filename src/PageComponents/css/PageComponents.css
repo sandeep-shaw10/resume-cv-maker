@@ -1,0 +1,25 @@
+.navlink{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navlink:hover{
+    text-decoration: none;
+    color: #a3ffcc;
+    transition: 10ms;
+}
+
+.navbar{
+    background-color: #05ADB3 !important;
+}
+
+
+footer{
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #8EE2E9;
+    font-weight: bolder;
+    color: #05ADB3;
+}
