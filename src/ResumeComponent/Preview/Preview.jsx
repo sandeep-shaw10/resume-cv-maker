@@ -3,16 +3,20 @@ import Resume from '../../PageComponents/Resume'
 
 export default class Preview extends Component 
 {
+    constructor(props){
+        super(props);
+    }
+    
     render() 
     {
-        var x = JSON.parse(localStorage.getItem('resume-data'))
-        console.log(x)
+        //console.log(this.props);
+        var prox = this.props.data;
         return (
             <>
-            <Resume />
+            <Resume updateState={this.props.updateState} />
             <div className="container" id="resume">
                 <div className="detail-preview">
-                    {x.personal["name"]}
+                    {prox.personal["name"]}
                 </div>
             </div>
             </>

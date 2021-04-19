@@ -74,9 +74,9 @@ class App extends Component {
                         <Route exact path={containLink+"/education"} component={Education}/>
                         <Route exact path={containLink+"/skills"} component={Skills}/>
                         <Route exact path={containLink+"/preview"}>
-                            <Preview data={this.state} />
+                            <Preview data={this.state} updateState={this.updateState}  />
                         </Route>
-                        <Route path="/" component={Home}/>
+                        <Route path="/" component={Home} />
                     </Switch>
                     <Footer />
                 </Router>

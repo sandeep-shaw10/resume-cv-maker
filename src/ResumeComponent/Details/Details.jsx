@@ -4,7 +4,7 @@ import Resume from '../../PageComponents/Resume';
 class Details extends Component {
 
     constructor(props){
-        super()
+        super(props)
         this.name = props.detail.personal["name"]
         console.log(this.name)
         this.updateData = this.updateData.bind(this);
@@ -20,7 +20,7 @@ class Details extends Component {
     }
 
     initState(){
-        console.log("Details")
+        //console.log("Details")
     }
 
 

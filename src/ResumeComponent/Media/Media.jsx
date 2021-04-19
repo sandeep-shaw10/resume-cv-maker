@@ -3,8 +3,8 @@ import Resume from '../../PageComponents/Resume';
 
 export default class Media extends Component {
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.updateData = this.updateData.bind(this);
     }
 

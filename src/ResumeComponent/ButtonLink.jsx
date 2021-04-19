@@ -28,6 +28,8 @@ export default class ButtonLink extends Component {
                     'Dribbble': ''
                 }
             }
+            //console.log(init)
+            //console.log(this.props)
             this.props.updateState(init)
             localStorage.removeItem('resume-data')
         }
