@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/resume-cv-maker/static/css/main.7f0c6189.chunk.css",
+    "main.js": "/resume-cv-maker/static/js/main.63d401e6.chunk.js",
+    "main.js.map": "/resume-cv-maker/static/js/main.63d401e6.chunk.js.map",
+    "runtime-main.js": "/resume-cv-maker/static/js/runtime-main.235f3d5b.js",
+    "runtime-main.js.map": "/resume-cv-maker/static/js/runtime-main.235f3d5b.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/resume-cv-maker/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.ce6685ab.chunk.js": "/resume-cv-maker/static/js/2.ce6685ab.chunk.js",
+    "static/js/2.ce6685ab.chunk.js.map": "/resume-cv-maker/static/js/2.ce6685ab.chunk.js.map",
+    "index.html": "/resume-cv-maker/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/resume-cv-maker/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.7f0c6189.chunk.css.map": "/resume-cv-maker/static/css/main.7f0c6189.chunk.css.map",
+    "static/js/2.ce6685ab.chunk.js.LICENSE.txt": "/resume-cv-maker/static/js/2.ce6685ab.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.235f3d5b.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.ce6685ab.chunk.js",
+    "static/css/main.7f0c6189.chunk.css",
+    "static/js/main.63d401e6.chunk.js"
+  ]
+}
