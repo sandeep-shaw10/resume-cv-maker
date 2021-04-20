@@ -14,6 +14,8 @@ import Education from './ResumeComponent/Career/Education';
 import Skills from './ResumeComponent/Skills/Skills';
 import Languages from './ResumeComponent/Skills/Languages';
 import Preview from './ResumeComponent/Preview/Preview';
+import Work from './ResumeComponent/Career/Work';
+import Awards from './ResumeComponent/Career/Awards';
 
 
 
@@ -44,6 +46,15 @@ class App extends Component {
                 },
                 skill: ["Add Skill"],
                 language: ["Add Language"],
+                education:[
+                    {
+                      "name": '',
+                      "degree": '',
+                      "from": '',
+                      "to": '',
+                      "about": '',
+                    }
+                ]
             }
             localStorage.setItem('resume-data',JSON.stringify(this.state))
         } 
@@ -71,11 +82,18 @@ class App extends Component {
                         <Route exact path={containLink+"/details"}>
                             <Details detail={this.state} updateState={this.updateState}/>
                         </Route>
-
                         <Route exact path={containLink+"/media"} >
                             <Media social={this.state} updateState={this.updateState} />
                         </Route>
-                        <Route exact path={containLink+"/education"} component={Education}/>
+                        <Route exact path={containLink+"/education"}>
+                            <Education data={this.state} updateState={this.updateState} />
+                        </Route>
+                        <Route exact path={containLink+"/work"}>
+                            <Work data={this.state} updateState={this.updateState} />
+                        </Route>
+                        <Route exact path={containLink+"/awards"}>
+                            <Awards data={this.state} updateState={this.updateState} />
+                        </Route>
                         <Route exact path={containLink+"/skills"} >
                             <Skills skill={this.state} updateState={this.updateState} />
                         </Route>

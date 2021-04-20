@@ -17,12 +17,17 @@
     margin: 2px;
 }
 
-.skill-value > ul > li > a > .close-btn > i{
+.skill-value > ul > li > button > .close-btn > i{
     background-color: #262626;
     border-radius: 50%;
     width: 18px;
     height: 18px;
     margin-left: 4px;
+}
+
+.skill-value > ul > li > button{
+    border: none;
+    background: none;
 }
 
 .fa-close{

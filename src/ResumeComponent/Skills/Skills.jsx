@@ -51,9 +51,9 @@ export default class Skills extends Component {
                                 return(
                                     <li key={index}>
                                         <span>{skill}</span>
-                                        <a onClick={() => this.deleteKey(index)}>
+                                        <button onClick={() => this.deleteKey(index)}>
                                             <span className='close-btn'><i className="fa fa-close"></i></span>
-                                        </a>
+                                        </button>
                                     </li> 
                                 );
                             })}                          

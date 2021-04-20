@@ -29,6 +29,15 @@ export default class ButtonLink extends Component {
                 },
                 skill: ["Add Skill"],
                 language: ["Add Language"],
+                education:[
+                    {
+                      "name": '',
+                      "degree": '',
+                      "from": '',
+                      "to": '',
+                      "about": '',
+                    }
+                ]
             }
             //console.log(init)
             //console.log(this.props)
@@ -45,8 +54,8 @@ export default class ButtonLink extends Component {
                 <Link className="btn btn-info my-2 mx-1 btn-sm" to={containLink+"/details"}>Details</Link>
                 <Link className="btn btn-info my-2 mx-1 btn-sm" to={containLink+"/media"}>Media</Link>
                 <Link className="btn btn-info my-2 mx-1 btn-sm" to={containLink+"/education"}>Education</Link>
-                <Link className="btn btn-info my-2 mx-1 btn-sm" to={containLink+"/details"}>Work</Link>
-                <Link className="btn btn-info my-2 mx-1 btn-sm" to={containLink+"/details"}>Awards</Link>
+                <Link className="btn btn-info my-2 mx-1 btn-sm" to={containLink+"/work"}>Work</Link>
+                <Link className="btn btn-info my-2 mx-1 btn-sm" to={containLink+"/awards"}>Awards</Link>
                 <Link className="btn btn-info my-2 mx-1 btn-sm" to={containLink+"/skills"}>Skills</Link>
                 <Link className="btn btn-info my-2 mx-1 btn-sm" to={containLink+"/language"}>Languages</Link>
                 <Link className="btn btn-info my-2 mx-1 btn-sm" to={containLink+"/preview"}>Preview</Link>

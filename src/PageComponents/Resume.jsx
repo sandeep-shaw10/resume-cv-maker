@@ -2,11 +2,7 @@ import React, { Component } from 'react'
 import ButtonLink from '../ResumeComponent/ButtonLink';
 
 
-export default class Resume extends Component {
-   constructor(props){
-       super(props);
-   }
-   
+export default class Resume extends Component {  
     render() {
         //console.log(this.props)
         return (

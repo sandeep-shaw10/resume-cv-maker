@@ -1,0 +1,15 @@
+div.ck.ck-sticky-panel__content > div > div > div:nth-child(15) > button,
+div.ck.ck-sticky-panel__content > div > div > div:nth-child(14) > button,
+div.ck.ck-sticky-panel__content > div > div > span.ck-file-dialog-button > button
+{
+    display: none;
+}
+
+.about-text{
+    font-size: 75%;
+    color: #696969;
+}
+
+div.ck.ck-editor__main > div{
+    height: 200px;
+}
