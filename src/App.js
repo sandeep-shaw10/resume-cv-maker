@@ -48,11 +48,11 @@ class App extends Component {
                 language: ["Add Language"],
                 education:[
                     {
-                      "name": '',
-                      "degree": '',
-                      "from": '',
-                      "to": '',
-                      "about": '',
+                      "name": 'Institute of ABC, XYZ',
+                      "degree": 'B. Sc',
+                      "from": '2015',
+                      "to": '2018',
+                      "about": '<p> About.... </p>',
                     }
                 ]
             }
@@ -70,14 +70,14 @@ class App extends Component {
 
     
     render() {
-        var containLink = "/resume";
+        var containLink = "resume-cv-maker/resume";
         return (
             <>
                 <Router>
                     <CustomNavbar />
                     <Switch>
-                        <Route exact path="/about" component={About}/>
-                        <Route exact path="/contact" component={Contact}/>
+                        <Route exact path="/resume-cv-maker/about" component={About}/>
+                        <Route exact path="/resume-cv-maker/contact" component={Contact}/>
 
                         <Route exact path={containLink+"/details"}>
                             <Details detail={this.state} updateState={this.updateState}/>
@@ -103,7 +103,7 @@ class App extends Component {
                         <Route exact path={containLink+"/preview"}>
                             <Preview data={this.state} updateState={this.updateState}  />
                         </Route>
-                        <Route path="/" component={Home} />
+                        <Route path="/resume-cv-maker" component={Home} />
                     </Switch>
                     <Footer />
                 </Router>
