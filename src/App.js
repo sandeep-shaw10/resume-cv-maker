@@ -16,7 +16,7 @@ import Languages from './ResumeComponent/Skills/Languages';
 import Preview from './ResumeComponent/Preview/Preview';
 import Work from './ResumeComponent/Career/Work';
 import Awards from './ResumeComponent/Career/Awards';
-
+import Project from './ResumeComponent/Career/Project';
 
 
 class App extends Component {
@@ -54,6 +54,33 @@ class App extends Component {
                       "to": '2018',
                       "about": '<p> About.... </p>',
                     }
+                ],
+                work:[
+                    {
+                      "name": 'Teach ABC, XYZ',
+                      "work": 'Web Developer',
+                      "from": '2015',
+                      "to": '2018',
+                      "about": '<p> About.... </p>',
+                    }
+                ],
+                awards:[
+                    {
+                        "name": 'Certificate of Something',
+                        "work": 'Hackathon',
+                        "from": '2015',
+                        "to": '',
+                        "about": '<p> About.... </p>',
+                      }
+                ],
+                project:[
+                    {
+                        "name": 'ML Project',
+                        "work": 'Data Visualization',
+                        "from": '2015',
+                        "to": '',
+                        "about": '<p> About.... </p>',
+                      }
                 ]
             }
             localStorage.setItem('resume-data',JSON.stringify(this.state))
@@ -70,7 +97,7 @@ class App extends Component {
 
     
     render() {
-        var containLink = "resume-cv-maker/resume";
+        var containLink = "/resume-cv-maker/resume";
         return (
             <>
                 <Router>
@@ -99,6 +126,9 @@ class App extends Component {
                         </Route>
                         <Route exact path={containLink+"/language"}>
                             <Languages language={this.state} updateState={this.updateState}  />
+                        </Route>
+                        <Route exact path={containLink+"/project"}>
+                            <Project data={this.state} updateState={this.updateState}  />
                         </Route>
                         <Route exact path={containLink+"/preview"}>
                             <Preview data={this.state} updateState={this.updateState}  />

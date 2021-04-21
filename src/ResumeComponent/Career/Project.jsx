@@ -7,7 +7,7 @@ import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 
-export default class Work extends Component {
+export default class Project extends Component {
     constructor(props){
         super(props)
         this.updateData = this.updateData.bind(this);
@@ -26,7 +26,7 @@ export default class Work extends Component {
        
         let init = { name: '', work: '', from: '', to: '',about: '',}
         if(this.state.name === '' || this.state.work === '' || this.state.from === ''){
-            alert("Atleast enter the Office Name, Designation and the year")
+            alert("Atleast enter the Institute Name, work Name and the year")
         }else{
             
             //Pushing to the Props
@@ -34,10 +34,10 @@ export default class Work extends Component {
             let mainData = this.props
 
             //Setting the text Editor
-            mainData.data.work.push(thisData)
+            mainData.data.project.push(thisData)
             let x = document.getElementsByClassName("ck-editor__editable");
-            let position = mainData.data.work.length - 1
-            mainData.data.work[position]["about"] = x[0].innerHTML
+            let position = mainData.data.project.length - 1
+            mainData.data.project[position]["about"] = x[0].innerHTML
             
             //Updating the props
             this.props.updateState(mainData.data)
@@ -57,13 +57,13 @@ export default class Work extends Component {
 
     handleDelete = (val) => {
         //Filter out the index array
-        let position = this.props.data.work.length - val - 1
-        let x =  this.props.data.work
+        let position = this.props.data.project.length - val - 1
+        let x =  this.props.data.project
         x = x.filter((obj, index) => index!==position)
         
         //update the state
         let result = this.props
-        result.data.work = x
+        result.data.project = x
         this.props.updateState(result.data)
 
     }
@@ -74,11 +74,11 @@ export default class Work extends Component {
             <>
                  <Resume updateState={this.props.updateState} />
                 <div className="container py-4 my-4  toggle">
-                    <h1 className="text-center display-4">WORK</h1>
+                    <h1 className="text-center display-4">PROJECT</h1>
                     <div className="form-row">
                         <div className="col-12 py-2">
                             <label htmlFor={"name"}> Name </label>
-                            <input onChange={this.onChangeInput} value={this.state.name} type="text" className="form-control" placeholder="Enter the Office Name" id={"name"} />
+                            <input onChange={this.onChangeInput} value={this.state.name} type="text" className="form-control" placeholder="Enter the Project Name" id={"name"} />
                         </div>
                         <div className={"col-md-3 col-6" + " py-2 "}>
                             <label htmlFor={"from"}> From </label>
@@ -89,8 +89,8 @@ export default class Work extends Component {
                             <input onChange={this.onChangeInput} value={this.state.to} type="number" className="form-control" placeholder="Enter the Year" id={"to"}/>
                         </div>
                         <div className="col-md-6 col-12 py-2">
-                            <label htmlFor={"work"}> {"Work"} </label>
-                            <input onChange={this.onChangeInput} value={this.state.work} type="text" className="form-control" placeholder={"Enter the "+"Designation"+" Name"} id={"work"} />
+                            <label htmlFor={"work"}> {"Certificate"} </label>
+                            <input onChange={this.onChangeInput} value={this.state.work} type="text" className="form-control" placeholder={"Enter the "+"Project Specification"} id={"work"} />
                         </div>
                         <div className="col-12 py-2">
                             <label > About </label>
@@ -110,7 +110,7 @@ export default class Work extends Component {
                 <hr/>
 
                     <div className="container">
-                        {this.props.data.work.slice(0).reverse().map((obj, index) => {
+                        {this.props.data.project.slice(0).reverse().map((obj, index) => {
                             return (
                                 <DetailRender 
                                     key={index} 
