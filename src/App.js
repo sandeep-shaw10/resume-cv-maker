@@ -97,14 +97,14 @@ class App extends Component {
 
     
     render() {
-        var containLink = "/resume-cv-maker/resume";
+        var containLink = "/resume";
         return (
             <>
-                <Router>
+                <Router basename="/resume-cv-maker">
                     <CustomNavbar />
                     <Switch>
-                        <Route exact path="/resume-cv-maker/about" component={About}/>
-                        <Route exact path="/resume-cv-maker/contact" component={Contact}/>
+                        <Route exact path="/about" component={About}/>
+                        <Route exact path="/contact" component={Contact}/>
 
                         <Route exact path={containLink+"/details"}>
                             <Details detail={this.state} updateState={this.updateState}/>
@@ -133,7 +133,7 @@ class App extends Component {
                         <Route exact path={containLink+"/preview"}>
                             <Preview data={this.state} updateState={this.updateState}  />
                         </Route>
-                        <Route path="/resume-cv-maker" component={Home} />
+                        <Route path="" component={Home} />
                     </Switch>
                     <Footer />
                 </Router>

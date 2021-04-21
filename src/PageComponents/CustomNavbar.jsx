@@ -14,10 +14,10 @@ export default class CustomNavbar extends Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
-                        <Link className="pr-4 my-1 navlink" to="/resume-cv-maker/home">Home</Link>
-                        <Link className="pr-4 my-1 navlink" to={"/resume-cv-maker/resume"+containLink}>Resume</Link>
-                        <Link className="pr-4 my-1 navlink" to="/resume-cv-maker/about">About</Link>
-                        <Link className="pr-4 my-1 navlink" to="/resume-cv-maker/contact">Contact</Link>
+                        <Link className="pr-4 my-1 navlink" to="/home">Home</Link>
+                        <Link className="pr-4 my-1 navlink" to={"/resume"+containLink}>Resume</Link>
+                        <Link className="pr-4 my-1 navlink" to="/about">About</Link>
+                        <Link className="pr-4 my-1 navlink" to="/contact">Contact</Link>
                     </Nav>
                 </Navbar.Collapse>
                 </Navbar>

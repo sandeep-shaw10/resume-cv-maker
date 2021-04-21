@@ -75,7 +75,7 @@ export default class ButtonLink extends Component {
     }
 
     render() {
-        var containLink = "/resume-cv-maker/resume";
+        var containLink = "/resume";
         return (
             <>
                 <Link className="btn btn-info my-2 mx-1 btn-sm" to={containLink+"/details"}>Details</Link>
