@@ -14,5 +14,13 @@ img{
 }
 
 .media-preview > div > div > p{
-    font-size: 10px;
+    font-size: 12px;
+}
+
+.content-preview > div > div > .wrap-1 {
+    border-right: 2px solid #ffb9b9;
+}
+
+div.content-preview.container.m-1 > div > div.col-9 > div > div > h2{
+    border-bottom: 2px solid #ffb9b9;
 }
