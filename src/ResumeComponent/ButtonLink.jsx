@@ -15,7 +15,7 @@ export default class ButtonLink extends Component {
                     "occupation":'',
                     "phone": '',
                     "email": '',
-                    "dob": '',
+                    "website": '',
                     "about": '',
                     "image": '',
                 },

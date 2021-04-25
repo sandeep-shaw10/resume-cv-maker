@@ -32,9 +32,9 @@ class App extends Component {
                     "occupation":'',
                     "phone": '',
                     "email": '',
-                    "dob": '',
+                    "website": '',
                     "about": '',
-                    "image": '',
+                    "image": ''
                 },
                 social:{
                     'LinkedIn': '',

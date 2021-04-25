@@ -12,9 +12,15 @@ class Details extends Component {
 
     updateData = (e) => {
         let location = e.target.id
-        this.bitData = e.target.value
-        this.props.detail.personal[location] = this.bitData
 
+        if(location === 'image'){
+            this.bitData = URL.createObjectURL(e.target.files[0])
+            this.props.detail.personal[location] = this.bitData
+        }else{
+            this.bitData = e.target.value
+            this.props.detail.personal[location] = this.bitData
+        }
+    
         let x = this.props;
         this.props.updateState(x.personal)
     }
@@ -47,20 +53,19 @@ class Details extends Component {
                             <input type="email" id="email" value={propx.personal["email"]} onChange={this.updateData} className="form-control personal-form" placeholder="Email" />
                         </div>
                         <div className="col-lg-4 col-md-7 py-2">
-                            <input type="date" id="dob" value={propx.personal["dob"]} onChange={this.updateData} className="form-control personal-form" placeholder="Date of Birth" />
+                            <input type="url" id="website" value={propx.personal["website"]} onChange={this.updateData} className="form-control personal-form" placeholder="Website" />
                         </div>
                         <div className="col-12">
                             <label htmlFor="objective">Your Aim / Objective / About </label>
                             <textarea id="about" value={propx.personal["about"]} onChange={this.updateData} className="form-control personal-form" rows="5"></textarea>
                         </div>
                         <div className="col-12">
-                            <label htmlFor="imageField">Enter Image</label>
-                            <input type="file" className="form-control-file personal-form" id="imageField" />
+                            <label htmlFor="imageField">Enter Image (Not mandatory)</label>
+                            <input type="file" onChange={this.updateData} name="image" accept="image/jpeg, image/png" className="form-control-file personal-form" id="image" />
                         </div>
                     </div>
                 </div>
-                <div className="mb-5">
-
+                <div className="mb-5">   
                 </div>
             </>
         )
