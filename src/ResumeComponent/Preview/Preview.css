@@ -5,9 +5,9 @@ img{
     margin: auto;
 }
 
-.personal-detail{
+/*.personal-detail{
     background-color: #ffb9b9;
-}
+}*/
 
 .personal-detail > p {
     font-size: 14px;
@@ -17,10 +17,10 @@ img{
     font-size: 12px;
 }
 
-.content-preview > div > div > .wrap-1 {
+/* .content-preview > div > div > .wrap-1 {
     border-right: 2px solid #ffb9b9;
 }
 
 div.content-preview.container.m-1 > div > div.col-9 > div > div > h2{
     border-bottom: 2px solid #ffb9b9;
-}
+} */

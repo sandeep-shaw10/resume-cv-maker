@@ -6,4 +6,26 @@
 
 body{
     background-color: #C5EBF7 !important;
+    -webkit-print-color-adjust: exact !important;
 }
+
+@media print {
+    body * {
+      visibility: hidden;
+    }
+
+  
+    #resume, #resume * {
+      visibility: visible;
+    }
+  
+    #resume {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    
+    @page {
+        size: A4; /* DIN A4 standard, Europe */
+    }
+  }

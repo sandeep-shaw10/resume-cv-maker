@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/resume-cv-maker/static/css/main.97a0f5cf.chunk.css",
-    "main.js": "/resume-cv-maker/static/js/main.2d6a9e36.chunk.js",
-    "main.js.map": "/resume-cv-maker/static/js/main.2d6a9e36.chunk.js.map",
+    "main.css": "/resume-cv-maker/static/css/main.8524f428.chunk.css",
+    "main.js": "/resume-cv-maker/static/js/main.3d825647.chunk.js",
+    "main.js.map": "/resume-cv-maker/static/js/main.3d825647.chunk.js.map",
     "runtime-main.js": "/resume-cv-maker/static/js/runtime-main.235f3d5b.js",
     "runtime-main.js.map": "/resume-cv-maker/static/js/runtime-main.235f3d5b.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/resume-cv-maker/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.6d70b651.chunk.js": "/resume-cv-maker/static/js/2.6d70b651.chunk.js",
-    "static/js/2.6d70b651.chunk.js.map": "/resume-cv-maker/static/js/2.6d70b651.chunk.js.map",
+    "static/js/2.831ee9cc.chunk.js": "/resume-cv-maker/static/js/2.831ee9cc.chunk.js",
+    "static/js/2.831ee9cc.chunk.js.map": "/resume-cv-maker/static/js/2.831ee9cc.chunk.js.map",
     "index.html": "/resume-cv-maker/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/resume-cv-maker/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.97a0f5cf.chunk.css.map": "/resume-cv-maker/static/css/main.97a0f5cf.chunk.css.map",
-    "static/js/2.6d70b651.chunk.js.LICENSE.txt": "/resume-cv-maker/static/js/2.6d70b651.chunk.js.LICENSE.txt"
+    "static/css/main.8524f428.chunk.css.map": "/resume-cv-maker/static/css/main.8524f428.chunk.css.map",
+    "static/js/2.831ee9cc.chunk.js.LICENSE.txt": "/resume-cv-maker/static/js/2.831ee9cc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.235f3d5b.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.6d70b651.chunk.js",
-    "static/css/main.97a0f5cf.chunk.css",
-    "static/js/main.2d6a9e36.chunk.js"
+    "static/js/2.831ee9cc.chunk.js",
+    "static/css/main.8524f428.chunk.css",
+    "static/js/main.3d825647.chunk.js"
   ]
 }
