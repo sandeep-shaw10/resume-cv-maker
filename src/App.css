@@ -24,7 +24,7 @@ body{
       left: 0;
       top: 0;
     }
-    
+       
     @page {
         size: A4; /* DIN A4 standard, Europe */
     }

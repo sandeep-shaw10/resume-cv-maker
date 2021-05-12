@@ -137,11 +137,6 @@ class App extends Component {
                     </Switch>
                     <Footer />
                 </Router>
-
-                {/* Remove it later */}
-                <div className="container my-5 py-5">
-                    
-                </div>
             </>
         )
     }

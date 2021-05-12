@@ -15,11 +15,39 @@
 
 
 footer{
-    position: fixed;
+    /*position: fixed;
     bottom: 0px;
     left: 0px;
-    right: 0px;
+    right: 0px;*/
     background-color: #8EE2E9;
     font-weight: bolder;
     color: #05ADB3;
+}
+
+.rotate{
+    animation: rotate 2.5s infinite;
+}
+
+.social-icon{
+    color: #ffffff;
+}
+
+.social-icon:hover{
+    text-decoration: none;
+    color: #8EE2E9 !important;
+}
+
+.social-icon > .fa:hover{
+    transform: rotate(359deg);
+    transition: 1.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes rotate{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(359deg)}
+}
+
+@-webkit-keyframes rotate{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(359deg)}
 }

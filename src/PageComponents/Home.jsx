@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import HomeDisplay from '../DesignComponent/HomeDisplay'
+
 
 export default class Home extends Component {
     render() {
         return (
             <div>
-                <h1>Home</h1>
+                <HomeDisplay />
             </div>
         )
     }
