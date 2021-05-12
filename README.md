@@ -5,7 +5,7 @@
 [![Generic badge](https://img.shields.io/badge/YEAR-2021-ff3333.svg)](https://sandeep-shaw10.github.io/resume-cv-maker/home)
 [![Generic badge](https://img.shields.io/badge/LICENSE-MIT-9933ff.svg)](https://github.com/sandeep-shaw10/resume-cv-maker/blob/master/LICENSE)
 
-![Preview](src\DesignComponent\images\icon.png)
+![Preview](https://github.com/sandeep-shaw10/resume-cv-maker/blob/master/src/DesignComponent/images/logo192.png)
 
 ## APP PREVIEW
 - [ ] Not Available
