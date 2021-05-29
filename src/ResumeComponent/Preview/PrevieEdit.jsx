@@ -40,7 +40,7 @@ export default class PrevieEdit extends Component
                 <div className="container">
                     <div className="row">
                         <div className ="btn-group btn-group-sm">
-                            <a href="/resume/details" type="button" className="btn btn-primary">Insert Image</a>
+                            <a href="resume-cv-maker/resume/details" type="button" className="btn btn-primary">Insert Image</a>
                             <button type="button" className="btn btn-danger" onClick={this.removeImage}>Remove Image</button>
                             <button type="button" className="btn btn-warning" onClick={this.printResume}>Print Resume</button>
                         </div>
