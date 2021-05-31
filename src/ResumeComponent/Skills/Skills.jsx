@@ -27,7 +27,7 @@ export default class Skills extends Component {
     }
 
     deleteKey = (keyValue) => {
-        console.log(keyValue)
+        //console.log(keyValue)
         let deleteSkill = this.props.skill
         deleteSkill.skill = deleteSkill.skill.filter((skill, index) => index !== keyValue)  //Filtering out selected
         this.props.updateState(deleteSkill)        //Update 

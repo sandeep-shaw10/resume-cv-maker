@@ -26,7 +26,7 @@ export default class Languages extends Component {
     }
 
     deleteKey = (keyValue) => {
-        console.log(keyValue)
+        //console.log(keyValue)
         let deleteLanguage = this.props.language
         deleteLanguage.language = deleteLanguage.language.filter((language, index) => index !== keyValue)  //Filtering out selected
         this.props.updateState(deleteLanguage)        //Update 

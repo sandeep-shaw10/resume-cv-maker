@@ -6,7 +6,7 @@ class Details extends Component {
     constructor(props){
         super(props)
         this.name = props.detail.personal["name"]
-        console.log(this.name)
+        
         this.updateData = this.updateData.bind(this);
     }
 
